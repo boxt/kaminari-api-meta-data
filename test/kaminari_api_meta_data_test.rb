@@ -40,7 +40,7 @@ class KaminariApiMetaDataTest < Minitest::Test
           end
 
           it "should return meta attributes" do
-            assert_equal @expected, @dummy.meta_attributes(@collection)
+            assert_equal @expected, @dummy.meta_data(@collection)
           end
         end
 
@@ -58,7 +58,7 @@ class KaminariApiMetaDataTest < Minitest::Test
           end
 
           it "should return meta attributes" do
-            assert_equal @expected, @dummy.meta_attributes(@collection, foo: "bar")
+            assert_equal @expected, @dummy.meta_data(@collection, foo: "bar")
           end
         end
       end
