@@ -2,6 +2,10 @@
 
 A gem for adding [Kaminari](https://github.com/kaminari/kaminari) collection meta data to your API responses that matches the format that works with the Kaminari [`paginate`](https://github.com/kaminari/kaminari#the-paginate-helper-method) helper method.
 
+[![Gem Version](https://badge.fury.io/rb/kaminari-api-meta-data.svg)](https://badge.fury.io/rb/kaminari-api-meta-data)
+[![Build Status](https://travis-ci.org/sleepingstu/kaminari-api-meta-data.svg?branch=master)](https://travis-ci.org/sleepingstu/kaminari-api-meta-data)
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
