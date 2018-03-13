@@ -34,7 +34,6 @@ Add the include to your class, in this example using the `ApplicationController`
 
 ```ruby
 class ApplicationController < ActionController::API
-
   include ::KaminariApiMetaData
 
   # ...
