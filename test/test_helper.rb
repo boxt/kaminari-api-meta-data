@@ -4,7 +4,7 @@ require "kaminari_api_meta_data"
 require "minitest/autorun"
 require "minitest/spec"
 require "minitest/reporters"
-require "mocha/mini_test"
+require "mocha/minitest"
 
 reporter_options = { color: true }
 Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new(reporter_options)]
