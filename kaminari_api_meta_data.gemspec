@@ -9,9 +9,9 @@ require 'kaminari_api_meta_data/version'
 Gem::Specification.new do |s|
   s.name          = 'kaminari-api-meta-data'
   s.version       = KaminariApiMetaData::VERSION
-  s.authors       = ['Stuart Chinery']
-  s.email         = ['stuart.chinery@gmail.com']
-  s.homepage      = 'https://github.com/sleepingstu/kaminari-api-meta-data'
+  s.authors       = ['BOXT Developers']
+  s.email         = ['developers@boxt.co.uk']
+  s.homepage      = 'https://github.com/boxt/kaminari-api-meta-data'
   s.summary       = 'A gem for adding Kaminari collection meta data to your API responses'
   s.description   = 'A gem for adding Kaminari collection meta data to your API responses that matches the format that works with Kaminari paginate method.'
   s.license       = 'MIT'
