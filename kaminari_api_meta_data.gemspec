@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 $LOAD_PATH.push File.expand_path('lib', __dir__)
 
 # Maintain your gem's version:
@@ -24,7 +26,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'kaminari', '~> 1.1'
 
-  s.add_development_dependency 'bundler', '~> 1.17'
+  s.add_development_dependency 'bundler', '~> 2.0'
   s.add_development_dependency 'minitest', '~> 5.11'
   s.add_development_dependency 'minitest-reporters', '~> 1.3'
   s.add_development_dependency 'mocha', '~> 1.8'
