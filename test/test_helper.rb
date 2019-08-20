@@ -1,14 +1,20 @@
-$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift File.expand_path("../lib", __dir__)
 require "kaminari_api_meta_data"
 
 require "minitest/autorun"
-require "minitest/spec"
+require "minitest/bang"
+require "minitest/fail_fast"
+require "minitest/macos_notification"
 require "minitest/reporters"
 require "mocha/minitest"
 
-reporter_options = { color: true }
-Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new(reporter_options)]
-
-# Filter out Minitest backtrace while allowing backtrace from other libraries
-# to be shown.
-Minitest.backtrace_filter = Minitest::BacktraceFilter.new
+Minitest::Reporters.use!(
+  [
+    Minitest::Reporters::SpecReporter.new,
+    Minitest::Reporters::MacosNotificationReporter.new(title: "Kaminari API Meta Data gem")
+  ],
+  "test",
+  Minitest.backtrace_filter
+)
