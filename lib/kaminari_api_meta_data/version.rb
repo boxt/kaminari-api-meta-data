@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
 module KaminariApiMetaData
-  VERSION = File.read("VERSION").split("\n").first
+  version_file = File.join(File.dirname(__FILE__), "../../VERSION")
+  VERSION = File.read(version_file).split("\n").first
 end
