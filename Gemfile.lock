@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    kaminari-api-meta-data (0.5.0)
+    kaminari-api-meta-data (0.6.0)
       kaminari (~> 1.1)
 
 GEM
