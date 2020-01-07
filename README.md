@@ -3,8 +3,7 @@
 A gem for adding [Kaminari](https://github.com/kaminari/kaminari) collection meta data to your API responses that matches the format that works with the Kaminari [`paginate`](https://github.com/kaminari/kaminari#the-paginate-helper-method) helper method.
 
 [![Gem Version](https://badge.fury.io/rb/kaminari-api-meta-data.svg)](https://badge.fury.io/rb/kaminari-api-meta-data)
-[![Build Status](https://travis-ci.org/boxt/kaminari-api-meta-data.svg?branch=master)](https://travis-ci.org/boxt/kaminari-api-meta-data)
-
+[![CircleCI](https://circleci.com/gh/boxt/kaminari-api-meta-data.svg?style=svg)](https://circleci.com/gh/boxt/kaminari-api-meta-data)
 
 ## Installation
 
@@ -86,14 +85,14 @@ puts meta
 
 ## Contributing
 
-* Check out the latest master and/or develop branches to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch off of develop (using Git Flow approach)
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally
-* When you are done generate a pull request
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+- Check out the latest master and/or develop branches to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
+- Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
+- Fork the project
+- Start a feature/bugfix branch off of develop (using Git Flow approach)
+- Commit and push until you are happy with your contribution
+- Make sure to add tests for it. This is important so I don't break it in a future version unintentionally
+- When you are done generate a pull request
+- Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
 ## License
 
