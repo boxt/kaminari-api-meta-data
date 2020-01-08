@@ -114,7 +114,7 @@ DEPENDENCIES
   minitest-fail-fast (~> 0.1)
   minitest-macos-notification (~> 0.2)
   minitest-reporters (~> 1.4)
-  mocha (~> 1.8)
+  mocha (~> 1.11)
   rake (~> 13.0)
   simplecov (~> 0.17)
 
