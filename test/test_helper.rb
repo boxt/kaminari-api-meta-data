@@ -12,7 +12,7 @@ require "mocha/minitest"
 
 Minitest::Reporters.use!(
   [
-    Minitest::Reporters::SpecReporter.new,
+    Minitest::Reporters::DefaultReporter.new,
     Minitest::Reporters::MacosNotificationReporter.new(title: "Kaminari API Meta Data gem")
   ],
   "test",
