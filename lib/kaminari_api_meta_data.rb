@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "kaminari_api_meta_data/version"
 
 module KaminariApiMetaData
