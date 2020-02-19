@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class KaminariApiMetaDataTest < Minitest::Test
-
   class Dummy
     include ::KaminariApiMetaData
   end
