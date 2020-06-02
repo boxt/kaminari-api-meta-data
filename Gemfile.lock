@@ -26,7 +26,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     ansi (1.5.0)
     ast (2.4.0)
-    boxt_ruby_style_guide (4.4.2)
+    boxt_ruby_style_guide (4.5.0)
       rubocop (~> 0.83)
       rubocop-faker (~> 1.0)
     builder (3.2.4)
