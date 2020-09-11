@@ -1,3 +1,16 @@
 inherit_gem:
   boxt_ruby_style_guide:
     - default.yml
+    - pending.yml
+    - rspec.yml
+
+require:
+  - rubocop-rspec
+
+inherit_mode:
+  merge:
+    - Exclude
+    - TargetRubyVersion
+
+AllCops:
+  TargetRubyVersion: 2.5 # Although all Boxt apps are using 2.7, this gem is public so setting to a lower version
