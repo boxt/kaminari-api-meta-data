@@ -1,39 +1,39 @@
-version: 2
+version: 2.1
+
+orbs:
+  bundler: boxt/bundler@0.2.0
+  git: boxt/git@0.1.0
+  rubocop: boxt/rubocop@0.3.0
+
+defaults: &defaults
+  environment:
+    TZ: "Europe/London"
+  working_directory: ~/kaminari-api-meta-data
+  docker:
+    - image: circleci/ruby:2.7.2
+      environment:
+        RAILS_ENV: test
+        TZ: "Europe/London"
+
 jobs:
-  build:
-    parallelism: 1
-    docker:
-      - image: circleci/ruby:2.7.2
-        environment:
-          BUNDLE_JOBS: 3
-          BUNDLE_RETRY: 3
-          BUNDLE_PATH: vendor/bundle
+  test:
+    <<: *defaults
     steps:
       - checkout
-      - run:
-          name: Configure Bundler
-          command: |
-            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
-            source $BASH_ENV
-            gem install bundler
-      - run:
-          name: Which bundler?
-          command: bundle -v
-      - restore_cache:
-          keys:
-            - kaminari-api-meta-data-{{ checksum "Gemfile.lock" }}
-      - run:
-          name: Bundle Install
-          command: bundle install
-      - save_cache:
-          key: kaminari-api-meta-data-{{ checksum "Gemfile.lock" }}
-          paths:
-            - vendor/bundle
-      - run:
-          name: Run rubocop
-          command: bundle exec rubocop
+      - git/cache-write:
+          path: ~/kaminari-api-meta-data
+      - bundler/cache-read
+      - bundler/install
+      - bundler/cache-write
+      - bundler/audit
+      - rubocop/lint
       - run:
           name: Run tests
-          command: bundle exec rake test
+          command: bundle exec rake test | circleci tests split --split-by=timings
       - store_test_results:
           path: test_results
+
+workflows:
+  build_and_test:
+    jobs:
+      - test
