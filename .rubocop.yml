@@ -10,7 +10,3 @@ require:
 inherit_mode:
   merge:
     - Exclude
-    - TargetRubyVersion
-
-AllCops:
-  TargetRubyVersion: 2.5 # Although all Boxt apps are using 2.7, this gem is public so setting to a lower version
