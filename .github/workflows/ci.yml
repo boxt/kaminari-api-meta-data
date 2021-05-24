@@ -13,29 +13,38 @@ on: [push, pull_request]
 
 jobs:
   audit:
+    strategy:
+      matrix:
+        ruby: [2.7, 3.0]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: "2.7"
+          ruby-version: ${{ matrix.ruby }}
       - run: bundle exec bundler-audit check --update
   lint:
+    strategy:
+      matrix:
+        ruby: [2.7, 3.0]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: "2.7"
+          ruby-version: ${{ matrix.ruby }}
       - run: bundle exec rubocop
   test:
+    strategy:
+      matrix:
+        ruby: [2.7, 3.0]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: "2.7"
+          ruby-version: ${{ matrix.ruby }}
       - run: bundle exec rake test
