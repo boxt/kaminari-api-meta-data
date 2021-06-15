@@ -1,7 +1,6 @@
 inherit_gem:
   boxt_ruby_style_guide:
     - default.yml
-    - pending.yml
     - rspec.yml
 
 require:
