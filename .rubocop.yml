@@ -5,13 +5,3 @@ inherit_gem:
 
 require:
   - rubocop-rspec
-
-inherit_mode:
-  merge:
-    - Exclude
-    - NewCops
-    - TargetRubyVersion
-
-AllCops:
-  TargetRubyVersion: 2.7
-  NewCops: enable
