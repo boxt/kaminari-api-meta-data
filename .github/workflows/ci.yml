@@ -13,16 +13,13 @@ on: [push, pull_request]
 
 jobs:
   lint:
-    strategy:
-      matrix:
-        ruby: [2.7, 3.0]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: ${{ matrix.ruby }}
+          ruby-version: "3.0.2"
       - run: bundle exec rubocop
   test:
     strategy:
