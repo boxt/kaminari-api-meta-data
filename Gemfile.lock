@@ -25,9 +25,9 @@ GEM
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
     ast (2.4.2)
-    boxt_ruby_style_guide (8.3.2)
+    boxt_ruby_style_guide (8.3.3)
       git (~> 1.4)
-      rubocop (= 1.19.1)
+      rubocop (= 1.20.0)
       rubocop-faker (= 1.1.0)
       rubocop-rails (= 2.11.3)
       rubocop-rake (= 0.6.0)
@@ -38,7 +38,7 @@ GEM
     diff-lcs (1.4.4)
     docile (1.4.0)
     erubi (1.10.0)
-    faker (2.18.0)
+    faker (2.19.0)
       i18n (>= 1.6, < 2)
     git (1.9.1)
       rchardet (~> 1.8)
@@ -95,7 +95,7 @@ GEM
       rspec (>= 3)
       terminal-notifier (>= 1.4)
     rspec-support (3.10.2)
-    rubocop (1.19.1)
+    rubocop (1.20.0)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
@@ -104,7 +104,7 @@ GEM
       rubocop-ast (>= 1.9.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.10.0)
+    rubocop-ast (1.11.0)
       parser (>= 3.0.1.1)
     rubocop-faker (1.1.0)
       faker (>= 2.12.0)
@@ -135,7 +135,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  boxt_ruby_style_guide (= 8.3.2)
+  boxt_ruby_style_guide (= 8.3.3)
   kaminari-api-meta-data!
   rake (~> 13.0)
   rspec (~> 3.9)
