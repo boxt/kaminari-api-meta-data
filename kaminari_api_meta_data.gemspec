@@ -15,7 +15,9 @@ Gem::Specification.new do |spec|
   spec.description = "A gem for adding Kaminari collection meta data to your API responses that matches the format "\
                      "that works with Kaminari paginate method."
   spec.license = "MIT"
-
+  spec.metadata = {
+    "rubygems_mfa_required" => "true"
+  }
   spec.files = Dir[
     "lib/**/*",
     "MIT-LICENSE",
