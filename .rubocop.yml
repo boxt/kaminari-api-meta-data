@@ -5,3 +5,6 @@ inherit_gem:
 
 require:
   - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.7
