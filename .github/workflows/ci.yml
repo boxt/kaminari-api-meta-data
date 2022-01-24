@@ -1,14 +1,5 @@
 name: CI
 
-# For now we'll run this on every push or pull request generated. However we might want to lock it to main branch
-# pushes in the future.
-# on:
-#   pull_request:
-#     branches:
-#       - "*"
-#   push:
-#     branches:
-#       - main
 on: [push, pull_request]
 
 jobs:
@@ -24,7 +15,7 @@ jobs:
   test:
     strategy:
       matrix:
-        ruby: [2.7, 3.0]
+        ruby: [2.7, "3.0", 3.1]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
