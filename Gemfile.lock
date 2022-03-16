@@ -24,10 +24,10 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
     ast (2.4.2)
-    boxt_ruby_style_guide (9.3.1)
+    boxt_ruby_style_guide (9.4.0)
       rubocop (= 1.26.0)
       rubocop-faker (= 1.1.0)
-      rubocop-rails (= 2.13.2)
+      rubocop-rails (= 2.14.0)
       rubocop-rake (= 0.6.0)
       rubocop-rspec (= 2.9.0)
     builder (3.2.4)
@@ -101,7 +101,7 @@ GEM
     rubocop-faker (1.1.0)
       faker (>= 2.12.0)
       rubocop (>= 0.82.0)
-    rubocop-rails (2.13.2)
+    rubocop-rails (2.14.0)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
@@ -124,7 +124,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  boxt_ruby_style_guide (= 9.3.1)
+  boxt_ruby_style_guide (= 9.4.0)
   kaminari-api-meta-data!
   rake (~> 13.0)
   rspec (~> 3.9)
