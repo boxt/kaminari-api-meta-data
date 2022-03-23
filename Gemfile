@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gemspec
 
 group :development do
-  gem "boxt_ruby_style_guide", "9.4.2"
+  gem "boxt_rubocop", "0.0.1"
   gem "rake", "~> 13.0"
   gem "rspec", "~> 3.9"
   gem "simplecov", "~> 0.17"
