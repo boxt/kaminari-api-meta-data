@@ -1,5 +1,5 @@
 inherit_gem:
-  boxt_ruby_style_guide:
+  boxt_rubocop:
     - default.yml
     - rspec.yml
 
