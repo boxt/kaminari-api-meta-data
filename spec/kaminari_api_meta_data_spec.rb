@@ -1,12 +1,10 @@
 # frozen_string_literal: true
 
-require "spec_helper"
-
 class Dummy
   include(::KaminariApiMetaData)
 end
 
-describe KaminariApiMetaData do
+RSpec.describe KaminariApiMetaData do
   describe "VERSION" do
     let(:current_version) { File.read("VERSION").split("\n").first }
 
