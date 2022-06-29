@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.email = ["developers@boxt.co.uk"]
   spec.homepage = "https://github.com/boxt/kaminari-api-meta-data"
   spec.summary = "A gem for adding Kaminari collection meta data to your API responses"
-  spec.description = "A gem for adding Kaminari collection meta data to your API responses that matches the format "\
+  spec.description = "A gem for adding Kaminari collection meta data to your API responses that matches the format " \
                      "that works with Kaminari paginate method."
   spec.license = "MIT"
   spec.metadata = {
