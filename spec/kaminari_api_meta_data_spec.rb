@@ -9,7 +9,7 @@ RSpec.describe KaminariApiMetaData do
     let(:current_version) { File.read("VERSION").split("\n").first }
 
     it "is set from the VERSION file" do
-      expect(::KaminariApiMetaData::VERSION).to eq(current_version)
+      expect(KaminariApiMetaData::VERSION).to eq(current_version)
     end
   end
 
