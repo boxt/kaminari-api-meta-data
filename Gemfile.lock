@@ -24,12 +24,12 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
     ast (2.4.2)
-    boxt_rubocop (0.0.30)
-      rubocop (= 1.40.0)
+    boxt_rubocop (0.0.31)
+      rubocop (= 1.41.0)
       rubocop-faker (= 1.1.0)
       rubocop-rails (= 2.17.3)
       rubocop-rake (= 0.6.0)
-      rubocop-rspec (= 2.15.0)
+      rubocop-rspec (= 2.16.0)
     builder (3.2.4)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
@@ -88,7 +88,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.0)
-    rubocop (1.40.0)
+    rubocop (1.41.0)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.1.2.1)
@@ -109,7 +109,7 @@ GEM
       rubocop (>= 1.33.0, < 2.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.15.0)
+    rubocop-rspec (2.16.0)
       rubocop (~> 1.33)
     ruby-progressbar (1.11.0)
     simplecov (0.21.2)
@@ -126,7 +126,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  boxt_rubocop (= 0.0.30)
+  boxt_rubocop (= 0.0.31)
   kaminari-api-meta-data!
   rake (~> 13.0)
   rspec (~> 3.12)
