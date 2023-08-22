@@ -25,8 +25,8 @@ GEM
       tzinfo (~> 2.0)
     ast (2.4.2)
     base64 (0.1.1)
-    boxt_rubocop (0.0.43)
-      rubocop (= 1.56.0)
+    boxt_rubocop (0.0.44)
+      rubocop (= 1.56.1)
       rubocop-faker (= 1.1.0)
       rubocop-rails (= 2.20.2)
       rubocop-rake (= 0.6.0)
@@ -37,7 +37,7 @@ GEM
     diff-lcs (1.5.0)
     docile (1.4.0)
     erubi (1.12.0)
-    faker (3.2.0)
+    faker (3.2.1)
       i18n (>= 1.8.11, < 2)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
@@ -93,7 +93,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.0)
-    rubocop (1.56.0)
+    rubocop (1.56.1)
       base64 (~> 0.1.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
@@ -145,7 +145,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  boxt_rubocop (= 0.0.43)
+  boxt_rubocop (= 0.0.44)
   kaminari-api-meta-data!
   rake (~> 13.0)
   rspec (~> 3.12)
