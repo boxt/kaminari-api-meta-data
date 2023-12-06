@@ -1,9 +1,9 @@
 inherit_gem:
   boxt_rubocop:
-    - default.yml
     - rspec.yml
 
 require:
+  - boxt_rubocop
   - rubocop-rake
   - rubocop-rspec
 
