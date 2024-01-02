@@ -7,7 +7,7 @@ A gem for adding [Kaminari](https://github.com/kaminari/kaminari) collection met
 
 ## Requirements
 
-* Ruby >= 2.7
+- Ruby >= 3.0
 
 ## Installation
 
