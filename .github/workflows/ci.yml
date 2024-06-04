@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     paths-ignore:
-      - 'README.md'
+      - "README.md"
 
 jobs:
   lint:
@@ -13,7 +13,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: "3.3.1"
+          ruby-version: "3.3.2"
       - run: bundle exec rubocop
   test:
     runs-on: ubuntu-latest
