@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gemspec
 
 group :development do
-  gem "boxt_rubocop", "2.13.0"
+  gem "boxt_rubocop", "2.14.1"
   gem "rake", "~> 13.2"
   gem "rspec", "~> 3.13"
   gem "simplecov", "~> 0.22"
