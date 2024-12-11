@@ -32,8 +32,8 @@ GEM
     ast (2.4.2)
     base64 (0.2.0)
     bigdecimal (3.1.8)
-    boxt_rubocop (2.15.0)
-      rubocop (= 1.69.0)
+    boxt_rubocop (2.15.1)
+      rubocop (= 1.69.1)
       rubocop-factory_bot (= 2.26.1)
       rubocop-faker (= 1.2.0)
       rubocop-performance (= 1.23.0)
@@ -106,14 +106,14 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
-    rubocop (1.69.0)
+    rubocop (1.69.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 2.4, < 3.0)
-      rubocop-ast (>= 1.36.1, < 2.0)
+      regexp_parser (>= 2.9.3, < 3.0)
+      rubocop-ast (>= 1.36.2, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
     rubocop-ast (1.36.2)
@@ -161,7 +161,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  boxt_rubocop (= 2.15.0)
+  boxt_rubocop (= 2.15.1)
   kaminari-api-meta-data!
   rake (~> 13.2)
   rspec (~> 3.13)
