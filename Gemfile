@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gemspec
 
 gem "appraisal", "~> 2.5"
-gem "boxt_rubocop", "2.19.0"
+gem "boxt_rubocop", "2.21.0"
 gem "rake", "~> 13.2"
 gem "rspec", "~> 3.13"
 gem "simplecov", "~> 0.22"
