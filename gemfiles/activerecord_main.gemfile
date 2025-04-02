@@ -2,12 +2,12 @@
 
 source "https://rubygems.org"
 
+gem "activerecord", github: "rails/rails", branch: "main"
 gem "appraisal", "~> 2.5"
-gem "boxt_rubocop", "2.18.0"
+gem "boxt_rubocop", "2.23.0"
 gem "rake", "~> 13.2"
 gem "rspec", "~> 3.13"
 gem "simplecov", "~> 0.22"
-gem "activerecord", github: "rails/rails", branch: "main"
 gem "sqlite3", "~> 2.0"
 
 gemspec path: "../"
