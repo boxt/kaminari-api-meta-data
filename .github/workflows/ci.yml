@@ -21,9 +21,6 @@ jobs:
       matrix:
         ruby:
           [
-            { version: "3.1", gemfile: activerecord_7 },
-            { version: "3.1", gemfile: activerecord_7_1 },
-            { version: "3.1", gemfile: activerecord_7_2 },
             { version: "3.2", gemfile: activerecord_7 },
             { version: "3.2", gemfile: activerecord_7_1 },
             { version: "3.2", gemfile: activerecord_7_2 },
