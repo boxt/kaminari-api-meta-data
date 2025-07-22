@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Currently doesn't work with Appraisal 2.5.0 and Ruby >= 3.1
+# Currently doesn't work with Appraisal 2.5.0 and Ruby >= 3.2
 # customize_gemfiles do
 #   {
 #     heading: <<~HEADING
