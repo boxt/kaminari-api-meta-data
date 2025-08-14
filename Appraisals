@@ -12,11 +12,6 @@
 #   }
 # end
 
-appraise "activerecord-7" do
-  gem "activerecord", "~> 7.0.0"
-  gem "sqlite3", "~> 1.7"
-end
-
 appraise "activerecord-7-1" do
   gem "activerecord", "~> 7.1.0"
   gem "sqlite3", "~> 1.7"
